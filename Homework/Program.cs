@@ -5,8 +5,6 @@ namespace Homework
 {
     class Program
     {
-       
-
         static void PrintArray(int[] array)
         {
             for(int i = 0; i < array.Length; i++)
@@ -31,14 +29,11 @@ namespace Homework
             Console.WriteLine();
         }
 
-
-
         static void Main(string[] args)
         {
-            int[,] matrix = Matrix.GenerateMatrix(5, 3);
+            int[,] matrix = MatrixHelper.GenerateMatrix(5, 3);
 
-            PrintMatrix(matrix);
-            
+            PrintMatrix(matrix);           
         }
     }
 }
